@@ -1,14 +1,16 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import { Outlet } from 'react-router-dom';
+import React from "react";
+import Header from "../../components/Header/Header";
+import { Outlet } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
     <main>
-        <Header />
-        <Outlet />
+      <Header />
+      <Outlet />
+      <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
