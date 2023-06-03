@@ -12,6 +12,8 @@ import BookDetails from "./components/BookDetails/BookDetails";
 import Login from './components/Auth/Login/Login';
 import Register from './components/Auth/Register/Register';
 import BorrowListBook from './components/BorrowListBook/BorrowListBook';
+import AddBook from './components/Admin/Book/AddBook';
+import ListBook from './components/Admin/Book/ListBook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +27,9 @@ root.render(
           <Route path = "login" element = {<Login />} />
           <Route path = "register" element = {<Register />} />
           <Route path = "borrowlistbook" element = {<BorrowListBook />} />
+          <Route path = "addbook" element = {<AddBook />} />
+          <Route path = "listbook" element = {<ListBook />} />
+
         
         </Route>
       </Routes>
