@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DefaultFormData = {
   username: "",
@@ -9,6 +10,7 @@ const DefaultFormData = {
 const Register = () => {
   const [formData, setFormData] = useState(DefaultFormData);
 
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -18,6 +20,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate("/login");
     console.log(formData);
   };
   return (
@@ -85,7 +88,7 @@ const Register = () => {
 
         <div className="grid grid-cols-1 gap-10 mt-10 mb-10">
           <button class="rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">
-            Đăng nhập
+            Đăng ký
           </button>
         </div>
       </form>
