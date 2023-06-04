@@ -14,6 +14,10 @@ import Register from './components/Auth/Register/Register';
 import BorrowListBook from './components/BorrowListBook/BorrowListBook';
 import AddBook from './components/Admin/Book/AddBook';
 import ListBook from './components/Admin/Book/ListBook';
+import AddUser from './components/Admin/User/AddUser';
+import ListUser from './components/Admin/User/ListUser';
+import EditBook from './components/Admin/Book/EditBook';
+import EditUser from './components/Admin/User/EditUser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,10 +31,12 @@ root.render(
           <Route path = "login" element = {<Login />} />
           <Route path = "register" element = {<Register />} />
           <Route path = "borrowlistbook" element = {<BorrowListBook />} />
-          <Route path = "addbook" element = {<AddBook />} />
-          <Route path = "listbook" element = {<ListBook />} />
-
-        
+          <Route path = "admin/addbook" element = {<AddBook />} />
+          <Route path = "admin/editbook/:id" element = {<EditBook />} />
+          <Route path = "admin/listbook" element = {<ListBook />} />
+          <Route path = "admin/adduser" element = {<AddUser />} />
+          <Route path = "admin/edituser/:id" element = {<EditUser />} />
+          <Route path = "admin/listuser" element = {<ListUser />} />
         </Route>
       </Routes>
     </BrowserRouter>

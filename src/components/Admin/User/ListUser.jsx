@@ -1,46 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ListBook = () => {
+const ListUser = () => {
   const data = [
     {
       id: 1,
-      title: "Molly Sanders",
-      publisher: "No",
-      author: "Thiều Trần Cương",
-      price: "20,000",
-      size: "20",
-      page: "20",
-      description: "Ok",
+      fullname: "Thiều Trần Cương",
+      username: "cuongthieu",
+      email: "nnheo@example.com",
+      phone: "123456789",
+      address: "Ha Nam",
+      role: "1",
+      status: "0",
     },
     {
       id: 2,
-      title: "Molly Sanders",
-      publisher: "No",
-      author: "Thiều Trần Cương",
-      price: "20,000",
-      size: "20",
-      page: "20",
-      description: "Ok",
+      fullname: "Thiều Trần Cương",
+      username: "cuongthieu",
+      email: "nnheo@example.com",
+      phone: "123456789",
+      address: "Ha Nam",
+      role: "1",
+      status: "0",
     },
     {
       id: 3,
-      title: "Molly Sanders",
-      publisher: "No",
-      author: "Thiều Trần Cương",
-      price: "20,000",
-      size: "20",
-      page: "20",
-      description: "Ok",
+      fullname: "Thiều Trần Cương",
+      username: "cuongthieu",
+      email: "nnheo@example.com",
+      phone: "123456789",
+      address: "Ha Nam",
+      role: "1",
+      status: "0",
     },
   ];
   return (
     <div class="container mx-auto px-4 sm:px-8">
       <div class="py-8">
         <div>
-          <h2 class="text-[25px] font-semibold">
-            Danh sách sách trên thư viện
-          </h2>
+          <h2 class="text-[25px] font-semibold">List User</h2>
         </div>
         <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
           <div class="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
@@ -48,25 +46,25 @@ const ListBook = () => {
               <thead>
                 <tr>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Title
+                    Fulname
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Publisher
+                    Username
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Author
+                    Email
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Price
+                    Phone
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Size
+                    Address
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Page
+                    Role
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-2xl font-semibold text-gray-700 uppercase tracking-wider">
-                    Description
+                    Status
                   </th>
                   <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100"></th>
                 </tr>
@@ -75,43 +73,29 @@ const ListBook = () => {
                 {data.map((item) => (
                   <tr key={item.id}>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <div class="flex">
-                        <div class="flex-shrink-0 w-10 h-10">
-                          <img
-                            class="w-full h-full rounded-full"
-                            src="https://jobsgo.vn/blog/wp-content/uploads/2022/05/sach-hay-ve-tu-duy-phan-bien-2.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="ml-3">
-                          <p class="text-gray-900 whitespace-no-wrap">
-                            Molly Sanders
-                          </p>
-                          <p class="text-gray-600 whitespace-no-wrap">000004</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <p class="text-gray-900 whitespace-no-wrap">$20,000</p>
-                      <p class="text-gray-600 whitespace-no-wrap">USD</p>
-                    </td>
-                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
                       <p class="text-gray-900 whitespace-no-wrap">
                         Thiều Trần Cương
                       </p>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <p class="text-gray-900 whitespace-no-wrap">$20,000</p>
-                      <p class="text-gray-600 whitespace-no-wrap">USD</p>
+                      <p class="text-gray-900 whitespace-no-wrap">cuongthieu</p>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <p class="text-gray-900 whitespace-no-wrap">500</p>
+                      <p class="text-gray-900 whitespace-no-wrap">
+                        cuongthieu@gmail.com
+                      </p>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <p class="text-gray-900 whitespace-no-wrap">500</p>
+                      <p class="text-gray-900 whitespace-no-wrap">0123456789</p>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
-                      <p class="text-gray-900 whitespace-no-wrap">OK</p>
+                      <p class="text-gray-900 whitespace-no-wrap">Hà Nam</p>
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
+                      <p class="text-gray-900 whitespace-no-wrap">1</p>
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl">
+                      <p class="text-gray-900 whitespace-no-wrap">0</p>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-xl text-right">
                       <div class="dropdown dropdown-left dropdown-end">
@@ -124,11 +108,11 @@ const ListBook = () => {
                           v-if="isOpen"
                         >
                           <li>
-                            {/* <p>Sửa</p> */}
-                            <Link to={`/admin/editbook/${item.id}`}>
+                            <Link to={`/admin/edituser/${item.id}`}>
                               <p>Sửa</p>
                             </Link>
                           </li>
+
                           <li>
                             <p>Xoá</p>
                           </li>
@@ -146,4 +130,4 @@ const ListBook = () => {
   );
 };
 
-export default ListBook;
+export default ListUser;
